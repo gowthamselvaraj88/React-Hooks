@@ -23,8 +23,8 @@ export default function Context() {
       </Space>
       <UserContext.Provider value={user}>
         <h3>useContext</h3>
-        <p>Hi Sasi</p>
-        <button>name{setUser}</button>
+        <p>Hi {user}</p>
+        <button type="button" onClick={()=>setUser("Krishnan")}>Change name</button>
         <Component2 />
       </UserContext.Provider>
      </div>
